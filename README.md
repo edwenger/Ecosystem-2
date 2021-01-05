@@ -4,6 +4,10 @@ Merged some of the Unity FPS tutorial assets, but switched the weapon projectile
 
 The bunnies still hop around in search of food and water, but they also can now transmit infections -- both vaccine strain (blue) and reverted virulent (red) -- to other nearby bunnies!  
 
+![bunny hunt thumbnail](bunny_hunt_thumbnail.png)
+
+Check it out online: https://play.unity.com/mg/other/bunny-hunt. 
+
 ------
 
 # Forked from Ecosystem-2
