@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics;
+using UnityEngine;
 
 public class LivingEntity : MonoBehaviour {
 
@@ -23,9 +24,9 @@ public class LivingEntity : MonoBehaviour {
         var meshRenderer = transform.GetComponentInChildren<MeshRenderer> ();
         for (int i = 0; i < meshRenderer.sharedMaterials.Length; i++)
         {
-            if (meshRenderer.sharedMaterials[i] == material) {
+            if (meshRenderer.sharedMaterials[i] is Material) {
                 material = meshRenderer.materials[i];
-                break;
+                //break;  // cache last renderer material (e.g. bunny coat not teeth/tail) for trait modification
             }
         }
     }

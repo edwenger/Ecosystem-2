@@ -1,12 +1,13 @@
 ﻿using static System.Math;
 
+[System.Serializable]
 public class Genes {
 
     const float mutationChance = .2f;
     const float maxMutationAmount = .3f;
     static readonly System.Random prng = new System.Random ();
 
-    public readonly bool isMale;
+    public bool isMale;  // for visibility in Unity Inspector
     public readonly float[] values;
 
     public Genes (float[] values) {
